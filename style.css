@@ -3,7 +3,18 @@
   background-color: rgb(50, 167, 145);
 }
 
+<<<<<<< HEAD
 #trybewarts-forms-logo {
   height: 500px;
   margin-left: 900px;
+=======
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+>>>>>>> a6ac6cea95dd81b1c098070650d8c818768fba51
 }
