@@ -1,6 +1,8 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
 }
 
 #trybewarts-forms-logo {
@@ -21,4 +23,8 @@ main {
 #label-family {
   display: flex;
   flex-direction: column;
+}
+
+h1 {
+  color: white;
 }
