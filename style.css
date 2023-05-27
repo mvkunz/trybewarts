@@ -16,6 +16,14 @@
   flex-direction: column;
 }
 
+#evaluation-form #input-name {
+  display:flex;
+ 
+  }
+#evaluation-form #input-lastname{
+display:flex;
+} 
+
 main {
   display: flex;
 }
