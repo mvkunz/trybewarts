@@ -9,6 +9,6 @@ loginForm.addEventListener('submit', (event) => {
   if (userEmail === 'tryber@teste.com' && userPassword === '123456') {
     alert('Olá, Tryber!');
   } else {
-    alert('Email ou senha inválidos');
+    alert('Email ou senha inválidos.');
   }
 });
