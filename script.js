@@ -1,18 +1,14 @@
-const myEmail = document.querySelector('.trybewarts-login.email');
-const myPassword = document.querySelector('.trybewarts-login.password');
-const myButtons = document.querySelectorAll('.submit');
+const loginForm = document.querySelector('.trybewarts-login');
 
-for (let index = 0; index < myButtons.length; index += 1) {
-  myButtons[index].addEventListener('click', (event) => {
-    event.preventDefault();
+loginForm.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-    const userEmail = myEmail.value;
-    const userPassword = myPassword.value;
+  const userEmail = loginForm.email.value;
+  const userPassword = loginForm.password.value;
 
-    if (userEmail === 'tryber@teste.com' && userPassword === '123456') {
-      alert('Olá, Tryber!');
-    } else {
-      alert('Email ou senha inválidos');
-    }
-  });
-}
+  if (userEmail === 'tryber@teste.com' && userPassword === '123456') {
+    alert('Olá, Tryber!');
+  } else {
+    alert('Email ou senha inválidos');
+  }
+});

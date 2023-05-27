@@ -28,3 +28,7 @@ main {
 h1 {
   color: white;
 }
+
+.trybewarts-login {
+  display: flex;
+}
