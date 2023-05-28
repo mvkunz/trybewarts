@@ -51,3 +51,22 @@ textarea {
   height: 150px;
 }
 
+#label-rate{
+display: flex;
+}
+
+#label-infos #agreement{
+display:inline-block;
+}
+
+/* #agreement{
+display: flex;
+
+} */
+
+/* #agreement{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+} */
+
