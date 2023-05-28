@@ -24,6 +24,15 @@
   display: inline-block;
 }
 
+#house #input-email{
+display:flex;
+
+}
+select{
+float:right;
+margin-right:80px;
+}
+
 main {
   display: flex;
 }
