@@ -12,3 +12,13 @@ loginForm.addEventListener('submit', (event) => {
     alert('Email ou senha inválidos.');
   }
 });
+const submitButton = document.getElementById('submit-btn');
+const checkbox = document.getElementById('agreement');
+checkbox.addEventListener('change', function () {
+  const checkedBox = checkbox.checked;
+  if (checkedBox) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+});
