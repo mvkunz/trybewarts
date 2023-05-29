@@ -61,6 +61,11 @@ textarea {
   height: 150px;
 }
 
+#counter{
+  border-style: none;
+  margin-left: 650px;
+}
+
 #label-rate {
   display: flex;
 }
