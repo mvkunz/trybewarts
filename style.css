@@ -68,3 +68,8 @@ textarea {
 #label-infos #agreement {
   display: inline-block;
 }
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+}
