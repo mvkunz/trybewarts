@@ -14,11 +14,12 @@ loginForm.addEventListener('submit', (event) => {
 });
 const submitButton = document.getElementById('submit-btn');
 const checkbox = document.getElementById('agreement');
-checkbox.addEventListener('change', function () {
-  const checkedBox = checkbox.checked;
-  if (checkedBox) {
+const submitForm = () => {
+  const markBox = checkbox.checked;
+  if (markBox) {
     submitButton.disabled = false;
   } else {
     submitButton.disabled = true;
   }
-});
+};
+checkbox.addEventListener('change', submitForm);
