@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trybewarts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,23 +18,18 @@
         <form class ="trybewarts-login">
             <input type="email" placeholder="Email" name="email">
             <input type="password" placeholder="Senha" name="password">
-            <button type="submit">Entrar</button>
+            <button type="submit" class="button is-link">Entrar</button>
            </form>
     </header>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg"></img> 
     
     <main>
       <form id="evaluation-form">
-       
-        <label id="label-family" for="">Qual sua família?</label>
-          <input type="radio" name="family" value="Frontend">Frontend
-          <input type="radio" name="family" value="Backend">Backend
-          <input type="radio" name="family" value="FullStack">FullStack
-          
-          <section><input type="text" id="input-name" placeholder="Nome">
+        <section><input type="text" id="input-name" placeholder="Nome">
           <input type="text" id="input-lastname" placeholder="Sobrenome">
           <br>
           <input type="email" name="" id="input-email" placeholder="Email">
+
 
           <label for="house">Escolha sua casa:</label>
             <select id="house">
@@ -42,20 +38,31 @@
               <option id="corvinode-house" value="Corvinode">Corvinode</option>
              <option id="pytherina-house" value="Pytherina">Pytherina</option>
             </select>
-<br>
+            
+            <hr>
+       <div class ='container'>
+        <div class="column">
+        <label id="label-family" for="">Qual sua família?</label>
+          <input type="radio" name="family" value="Frontend">Frontend
+          <input type="radio" name="family" value="Backend">Backend
+          <input type="radio" name="family" value="FullStack">FullStack
+        </div>
+          
+<br><div class="column">
           <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
             <input type="checkbox" class="subject" value="HoFs">HoFs
             <input type="checkbox" class="subject" value="Jest">Jest
             <input type="checkbox" class="subject" value="Promises">Promises
+            <br>
             <input type="checkbox" class="subject" value="React">React
             <input type="checkbox" class="subject" value="SQL">SQL
             <input type="checkbox" class="subject" value="Python">Python
-                    
-          <label class="textarea">Deixe seu comentário:</label>
-          <textarea maxlength="500" id="textarea"></textarea>
-          <input type="number" id="counter" value="500" disabled >
-
-          <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
+            </div>
+       </div>
+            <br>
+            <hr>
+            <br>
+            <label id="label-rate" for="">Como você avalia a Trybewarts?
           <input type="radio" name="rate" value="1">1
           <input type="radio" name="rate" value="2">2
           <input type="radio" name="rate" value="3">3
@@ -66,10 +73,14 @@
           <input type="radio" name="rate" value="8">8
           <input type="radio" name="rate" value="9">9
           <input type="radio" name="rate" value="10">10
-          <br>
+        </label>
+         <br><br>
+          <label class="textarea">Deixe seu comentário:</label>
+          <textarea maxlength="500" id="textarea"></textarea>
+          <input type="number" id="counter" value="500" disabled >
           <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
           <input type="checkbox" id="agreement">
-          <button type="submit" id="submit-btn" disabled>Enviar</button>
+          <button type="submit" id="submit-btn" class="button is-link" disabled>Enviar</button>
       </form>
     </main>
     

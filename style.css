@@ -29,18 +29,36 @@
 
 }
 
-#house {
+/* #house {
   float: right;
   margin-right: 80px;
+} */
+.label-house, #house{
+  display:inline-block;
+  vertical-align: middle;
+}
+
+#house{
+  margin-right: 250px;
 }
 
 main {
   display: flex;
 }
 
-#label-family {
-  display: flex;
-  flex-direction: column;
+.container{
+  display:flex;
+}
+#label-family, input[type='radio'], #label-content, .subject{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.subject{
+  display: inline-block;
+  margin-right: 10px;
+  
 }
 
 h1 {
@@ -74,7 +92,3 @@ textarea {
   display: inline-block;
 }
 
-#label-content {
-  display: flex;
-  flex-direction: column;
-}
