@@ -25,7 +25,7 @@ body {
 }
 
 #trybewarts-forms-logo {
-  height: 400px;
+  height: 500px;
   margin-top: 100px;
   margin-left: 300px;
 }
@@ -62,10 +62,6 @@ section {
   border-radius: 10px;
   border: none;
 }
-
-/* #evaluation-form #input-name {
-  display: inline-block;
-} */
 
 #evaluation-form #input-lastname {
   display: inline-block;
@@ -113,6 +109,7 @@ h1 {
 
 .trybewarts-login {
   display: flex;
+
 }
 
 .trybewarts-login #email-login {
