@@ -8,17 +8,20 @@
     <title>Trybewarts</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg"></img>
+        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" width="60px"></img>
         <h1 id="trybewarts-header-title">Trybewarts</h1>
 
-        <form class ="trybewarts-login">
-            <input type="email" placeholder="Email" name="email">
-            <input type="password" placeholder="Senha" name="password">
-            <button type="submit" class="button is-link">Entrar</button>
+        <form class="trybewarts-login">
+            <input type="email" id="email-login" placeholder="Email" name="email">
+            <input type="password" id="password-login" placeholder="Senha" name="password">
+            <button type="submit" id="button-login" class="button is-link">Entrar</button>
            </form>
     </header>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg"></img> 
@@ -42,10 +45,10 @@
             <hr>
        <div class ='container'>
         <div class="column">
-        <label id="label-family" for="">Qual sua família?</label>
-          <input type="radio" name="family" value="Frontend">Frontend
-          <input type="radio" name="family" value="Backend">Backend
-          <input type="radio" name="family" value="FullStack">FullStack
+        <label id="label-family" for="family">Qual sua família?</label>
+          <input type="radio" class="family-choose" name="family" value="Frontend">Frontend
+          <input type="radio" class="family-choose" name="family" value="Backend">Backend
+          <input type="radio" class="family-choose" name="family" value="FullStack">FullStack
         </div>
           
 <br><div class="column">
