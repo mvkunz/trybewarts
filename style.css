@@ -73,11 +73,11 @@ section {
 #house {
   display: flex;
   height: 40px;
-  width: 250px;
+  width: 150px;
   border-radius: 10px;
   border: none;
   float: right;
-  margin-left: 20px;
+  margin-right: 300px;
 }
 
 .label-house , #house {
