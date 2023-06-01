@@ -26,6 +26,7 @@ body {
 
 #trybewarts-forms-logo {
   height: 400px;
+  margin-top: 100px;
 }
 
 .trybewarts-header-logo {
@@ -35,35 +36,51 @@ body {
 section {
   display: flex;
   flex-direction: column;
-  margin: 60px auto 20px 60px;
+  justify-content: space-between;
+  margin: 50px auto 20px 60px;
+}
+
+#paragraph-form {
+  text-align: center;
+  margin-top: 40px;
+  margin-right: 90px;
+  font-size: 30px;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
-#evaluation-form #input-name {
+#input-name , #input-lastname , #input-email {
   display: inline-block;
+  height: 40px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
 }
+
+/* #evaluation-form #input-name {
+  display: inline-block;
+} */
 
 #evaluation-form #input-lastname {
   display: inline-block;
 }
 
-#house #input-email {
-  display: flex;
-}
-
 #house {
+  display: flex;
+  height: 40px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
   float: right;
   margin-left: 20px;
 }
 
-.label-house,
-#house {
+.label-house , #house {
   display: inline-block;
   vertical-align: middle;
 }
@@ -76,10 +93,7 @@ main {
   display: flex;
 }
 
-#label-family,
-.family-choose,
-#label-content,
-.subject {
+#label-family , .family-choose , #label-content , .subject {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
@@ -153,7 +167,6 @@ textarea {
 #label-infos #agreement {
   display: inline-block;
 }
-
 
 footer {
   background-color: rgb(60, 64, 74);
