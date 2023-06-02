@@ -55,9 +55,7 @@ section {
   justify-content: space-around;
 }
 
-#input-name,
-#input-lastname,
-#input-email {
+#input-name , #input-lastname , #input-email {
   display: inline-block;
   height: 40px;
   width: 250px;
@@ -79,13 +77,9 @@ section {
   margin-right: 300px;
 }
 
-.label-house,
-#house {
+.label-house , #house {
   display: inline-block;
   vertical-align: middle;
-}
-
-#house {
   margin-right: 280px;
 }
 
@@ -97,10 +91,7 @@ main {
   display: flex;
 }
 
-#label-family,
-.family-choose,
-#label-content,
-.subject {
+#label-family , .family-choose , #label-content , .subject {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
@@ -165,7 +156,6 @@ h1 {
 textarea {
   width: 100%;
   height: 150px;
-
 }
 
 .textarea-label {
@@ -181,10 +171,9 @@ textarea {
   display: flex;
 }
 
-#label-rate input[type="radio"] {
+#label-rate input [ type = 'radio' ] {
   margin: 10px;
 }
-
 
 .agreement-check {
   display: flex;
