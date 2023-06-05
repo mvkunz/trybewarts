@@ -29,20 +29,21 @@ const counter = document.getElementById('counter');
 counter.value = 500;
 const updateValue = () => {
   const characters = 500 - textArea.value.length;
-  counter.value = characters;
+  counter.innerText = characters;
 };
 const countCharacters = () => {
   const inputLength = textArea.value.length;
   const maxCharacters = 500;
   if (inputLength < maxCharacters) {
-    counter.value -= 1;
+    counter.innerText -= 1;
   } else if (inputLength > 0) {
-    counter.value += 1;
+    counter.innerText += 1;
   }
 };
 textArea.addEventListener('keydown', updateValue);
 textArea.addEventListener('input', updateValue);
 textArea.addEventListener('input', countCharacters);
+textArea.addEventListener('keyup', updateValue);
 // o evento keydown chama a função updateValue sempre que é dado um clique dentro do textarea
 // input updateValue : é acionada quando ocorre alguma mudança no textearea
 // input countCharacters: é acionada quando o evento input responsável por contar o número de caracteres no textarea e atualizá-lo acontece
